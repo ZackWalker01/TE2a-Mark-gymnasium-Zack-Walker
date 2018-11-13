@@ -1,0 +1,42 @@
+body {
+	/* Innehållet i body går enda ut i kanten */
+	margin: 0;
+}
+
+.content {
+	/* Använd flex */
+	display: flex;
+	/* flex items orienterade horisontellt */
+	flex-direction: row;
+}
+
+.vanster,
+.hoger {
+	/* Gemensamt för vanster och hoger */
+	display: flex;
+	/* flex items orienterade vertikalt */
+	flex-direction: column;
+	/* Innehållets marginal till kanten */
+	padding: 10px;
+	background-color: red;
+}
+
+/* Det som är unikt för vanster respektive hoger */
+.vanster {
+	flex-basis: 75%;
+	background-color: red;
+}
+
+.hoger {
+	flex-basis: 25%;
+	background-color: green;
+}
+
+@media only screen and (max-width: 800px) {
+
+	.content {
+    /* Om skärmen är liten lägger sig vanster
+    och hoger under varandra, orienterade vertikalt */
+		flex-direction: column;
+	}
+}
