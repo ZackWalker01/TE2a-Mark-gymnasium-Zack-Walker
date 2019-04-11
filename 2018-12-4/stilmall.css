@@ -2,34 +2,35 @@ body {
 	/* Innehållet i body går enda ut i kanten */
 	margin: 0;
 }
+a{
+	text-decoration: none;
+	color: black;
 
+
+}
 .content {
 	/* Använd flex */
 	display: flex;
+flex-basis: 10px;
 	/* flex items orienterade horisontellt */
-	flex-direction: row;
-	background-color: purple;
+	flex-direction: column;
+	background-color: white;
 }
 .hoger {
-	flex-basis: 25%;
+	flex-basis: 40%%;
 	background-color: green;
 		flex-direction: column;
-			padding: 10px;
-				display: flex;
+	 font-family: 'Allerta Stencil', sans-serif;
 }
 .mid {
-flex-basis: 50%;
+flex-basis: 40%;
 background-color: cyan;
+flex-direction: column;
 font-family: 'Allerta Stencil', sans-serif;
 }
-.vanster {
-flex-basis: 25%;
-background-color: red;
-	flex-direction: column;
-		padding: 10px;
-			display: flex;
+
 }
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 1080px) {
 
 	.content {
     /* Om skärmen är liten lägger sig vanster

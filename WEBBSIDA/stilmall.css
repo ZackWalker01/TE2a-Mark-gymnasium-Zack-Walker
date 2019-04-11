@@ -1,0 +1,123 @@
+
+body {
+  font-family: 'Lato', sans-serif;
+  margin: 0;
+  padding: 0px;
+  overflow-x: hidden;
+  background-image:url("PEWDIEPIE.jpg");
+
+}
+nav {
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
+}
+.p1 {
+margin: 0px;
+}
+
+header {
+display: flex;
+flex-direction: row;
+color: white;
+background-color: black;
+border-bottom:#4d0026 3px solid;
+
+}
+header h1 {
+margin: auto;
+}
+table {
+color: white;
+  background: #000000;
+  padding: 5px;
+  width: relative;
+  height: relative;
+  border:#4d0026 3px solid;
+
+}
+
+
+#hast {
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+
+}
+
+#hast td, #hast th {
+  border: 1px solid #4d0026;
+  padding: 8px;
+}
+
+
+
+#hast th {
+  padding-top: 4px;
+  padding-bottom: 4px;
+  text-align: left;
+  background-color: #595959;
+
+}
+
+#textruta1 {
+  border-radius: 25px;
+    background: #000000;
+    padding: 10px;
+    width: relative;
+    height: relative;
+word-spacing: 10px;
+line-height: 1.6;
+color: white;
+border:#4d0026 3px solid;
+margin: 10px;
+}
+
+.overlay {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: rgba(18, 17, 17, 0.7);
+  overflow-x: hidden;
+  transition: 0.5s;
+}
+
+.overlay-content {
+  position: relative;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.overlay a {
+  padding: 0px;
+  text-decoration: none;
+  font-size: 36px;
+  color: white;
+  display: block;
+  transition: 0.3s;
+}
+
+.overlay a:hover, .overlay a:focus {
+  color: black;
+}
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+@media screen and (max-height: 800px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+  font-size: 40px;
+  top: 15px;
+  right: 35px;
+  }
+}

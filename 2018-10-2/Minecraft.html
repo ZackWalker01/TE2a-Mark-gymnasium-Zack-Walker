@@ -3,13 +3,20 @@
 <head>
   <meta charset="utf-8" />
   <style>
+
+body {
+  margin: 0;
+}
+
+
 .body {
   position: fixed;
 background-color: cyan;
 width: 100px ;
-height: 300px;
+height: 400px;
 top: 400px;
 left: 400px;
+
 }
 .head {
   position: fixed;
@@ -40,17 +47,33 @@ left: 400px;
 position: fixed;
 background-color: green;
 height: 20px;
-width: 1800px;
+width: 100%;
 top: 700px;
-left: 10px;
+left: 0px;
 }
 .dirt {
 position: fixed;
 background-color: #341C02;
 height: 400px;
-width: 1800px;
+width: 100%;
 top: 720px;
-left: 10px;
+left: 0px;
+}
+.stone {
+position: fixed;
+background-color: #7a8783;
+height: 800px;
+width: 100%;
+top: 920px;
+left: 0px;
+}
+.bedrock {
+position: fixed;
+background-color: #292d2c;
+height: 100px;
+width: 100%;
+top: 1720px;
+left: 0px;
 }
 .tree {
 position: fixed;
@@ -68,16 +91,269 @@ width: 300px;
 top: 50px;
 left: 800px;
 }
+.tree1 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 1700px;
+}
+.leaf1 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 100px;
+left: 1600px;
+}
+.tree2 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 2200px;
+}
+.leaf2 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 50px;
+left: 2100px;
+}
+.tree3 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 2900px;
+}
+.leaf3 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 150px;
+left: 2800px;
+}
+.tree4 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 3300px;
+}
+.leaf4 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 50px;
+left: 3220px;
+}
+.tree5 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 3900px;
+}
+.leaf5 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 200px;
+left: 3800px;
+}
+.tree6 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 4300px;
+}
+.leaf6 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 50px;
+left: 4240px;
+}
+.tree7 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 4700px;
+}
+.leaf7 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 100px;
+left: 4610px;
+}
+.tree8 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 5200px;
+}
+.leaf8 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 50px;
+left: 5100px;
+}.tree9 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 5900px;
+}
+.leaf9 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 150px;
+left: 5800px;
+}.tree10 {
+position: fixed;
+background-color: #251504;
+height: 350px;
+width: 100px;
+top: 350px;
+left: 6500px;
+}
+.leaf10 {
+position: fixed;
+background-color: #48A91B;
+height: 300px;
+width: 300px;
+top: 100px;
+left: 6400px;
+}
 .sky {
 position: fixed;
-background-color: #5FD6CD;
-height: 100%;
+background-color: #2c8fa0;
+height: 800px;
 width: 100%;
+}
+.net {
+position: fixed;
+background-color: #ba0d0d;
+top: 1700px;
+height: 2300px;
+width: 7000px;
+}
+.netdirt {
+  position: fixed;
+  background-color: #ef1c1c;
+  height: 250px;
+  width: 100%;
+  top: 3450px;
+  left: 0px;
+}
+.lava {
+  position: fixed;
+  background-color: #e56114;
+  height: 200px;
+  width: 3000px;
+  top: 3450px;
+  left: 200px;
+}
+.glow {
+position: fixed;
+background-color: #faff00;
+top: 1700px;
+height: 400px;
+width: 800px;
+left: 900px;
+}
+.glows {
+position: fixed;
+background-color: #faff00;
+top: 1900px;
+height: 400px;
+width: 600px;
+left: 900px;
+}
+.glow2 {
+position: fixed;
+background-color: #faff00;
+top: 1700px;
+height: 400px;
+width: 1000px;
+left: 4000px;
+}
+.glows2 {
+position: fixed;
+background-color: #faff00;
+top: 1900px;
+height: 400px;
+width: 600px;
+left: 4200px;
+}
+.ghast {
+position: fixed;
+background-color: #ffffff;
+top: 2250px;
+height: 700px;
+width: 700px;
+left: 3400px;
+}
+.ghastleg {
+position: fixed;
+background-color: #ffffff;
+top: 2950px;
+height: 200px;
+width: 100px;
+left: 3500px;
+}
+.ghastleg1 {
+position: fixed;
+background-color: #ffffff;
+top: 2950px;
+height: 200px;
+width: 100px;
+left: 3900px;
+}
+.eyes1 {
+position: fixed;
+background-color: #ff0000;
+top: 2450px;
+height: 200px;
+width: 50px;
+left: 3500px;
+}
+.eyes {
+position: fixed;
+background-color: #ff0000;
+top: 2450px;
+height: 200px;
+width: 50px;
+left: 3900px;
 }
 .sun {
   background-color: #F0FC00;
-height: 200px;
-width: 200px;
+height: 350px;
+width: 350px;
 }
 .cloud {
   position: fixed;
@@ -85,7 +361,7 @@ background-color: white;
 height: 100px;
 width: 300px;
 top: 100px;
-left: 400px;
+left: 500px;
 
 }
 .cloud2 {
@@ -97,16 +373,68 @@ top: 100px;
 left: 1200px;
 
 }
+.cloud3 {
+  position: fixed;
+background-color: white;
+height: 100px;
+width: 300px;
+top: 100px;
+left: 2700px;
+
+}
+.cloud4 {
+  position: fixed;
+background-color: white;
+height: 100px;
+width: 300px;
+top: 100px;
+left: 4000px;
+
+}
+.cloud5 {
+  position: fixed;
+background-color: white;
+height: 100px;
+width: 300px;
+top: 100px;
+left: 4900px;
+
+}
+.cloud6 {
+  position: fixed;
+background-color: white;
+height: 100px;
+width: 300px;
+top: 100px;
+left: 5900px;
+
+}
    </style>
   <title>Minecraft</title>
   </head>
   <body>
 
     <div class="sky">
+<div class="net"> </div>
+<div class="netdirt"> </div>
+<div class="lava"> </div>
+<div class="glow"> </div>
+<div class=glows> </div>
+<div class="glow2"> </div>
+<div class="glows2"> </div>
+<div class="ghast"> </div>
+<div class="ghastleg"> </div>
+<div class="ghastleg1"> </div>
+<div class="eyes"> </div>
+<div class="eyes1"> </div>
           <div class="sun">
     </div>
     <div class="cloud"> </div>
     <div class="cloud2"> </div>
+    <div class="cloud3"> </div>
+    <div class="cloud4"> </div>
+    <div class="cloud5"> </div>
+    <div class="cloud6"> </div>
     </div>
   <div class="body">
   <div class="head">
@@ -114,12 +442,43 @@ left: 1200px;
   <div class="pants">
     <div class="grass">
       <div class="dirt">
+        <div class="stone">
+          <div class="bedrock">
         <div class="tree">
-          <div class="leaf"> </div>
+          <div class="tree1">
+            <div class="tree2">
+              <div class="tree3">
+                <div class="tree4">
+                  <div class="tree5">
+                    <div class="tree6">
+                      <div class="tree7">
+                        <div class="tree8">
+                          <div class="tree9">
+                            <div class="tree10">
 
+          <div class="leaf"> </div>
+          <div class="leaf1"> </div>
+          <div class="leaf2"> </div>
+          <div class="leaf3"> </div>
+          <div class="leaf4"> </div>
+          <div class="leaf5"> </div>
+          <div class="leaf6"> </div>
+          <div class="leaf7"> </div>
+          <div class="leaf8"> </div>
+          <div class="leaf9"> </div>
+          <div class="leaf10"> </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
+        </div>
         </div>
 
-</div></div></div></div></div></div>
+</div></div></div></div></div></div></div></div>
 
 
   </body>
