@@ -1,3 +1,6 @@
+h1 {
+  transform: translateX(-25px);
+}
 
 body {
   font-family: 'Lato', sans-serif;
@@ -62,43 +65,6 @@ input{
   transform: translateY(4px);
   }
 
-
-
-#hast {
-  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
-  border-collapse: collapse;
-  width: 100%;
-
-}
-
-#hast td, #hast th {
-  border: 1px solid #4d0026;
-  padding: 8px;
-}
-
-
-
-#hast th {
-  padding-top: 4px;
-  padding-bottom: 4px;
-  text-align: left;
-  background-color: #595959;
-
-}
-
-#textruta1 {
-  border-radius: 25px;
-    background: #000000;
-    padding: 10px;
-    width: relative;
-    height: relative;
-word-spacing: 10px;
-line-height: 1.6;
-color: white;
-border:#4d0026 3px solid;
-margin: 10px;
-}
-
 .overlay {
   height: 100%;
   width: 0;
@@ -141,6 +107,14 @@ margin: 10px;
   top: 20px;
   right: 45px;
   font-size: 60px;
+}
+
+.video {
+  display: flex;
+  align-items: center;
+  align-content: center;
+justify-content: center;
+
 }
 
 @media screen and (max-height: 800px) {
